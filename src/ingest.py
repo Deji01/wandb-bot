@@ -14,7 +14,7 @@ from langchain.docstore.document import Document
 from langchain.document_loaders.markdown import UnstructuredMarkdownLoader
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.text_splitter import MarkdownTextSplitter
-from langchain.vectorstores import chroma
+from langchain.vectorstores.chroma import Chroma
 
 set_llm_cache(SQLiteCache(database_path=".langchain.db"))
 
